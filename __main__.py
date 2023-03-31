@@ -22,6 +22,8 @@ retry_count = 0
 # Loop utama
 while True:
     # Lakukan permintaan GET ke URL
+    if len(db.find_one({"name":"MONITOR"})['monitor_url']) == 0:
+        continue
     for url db.find_one({"name":"MONITOR"})['monitor_url']:
         response = requests.get(url)
 
