@@ -26,4 +26,4 @@ while True:
                     print("URL activated: ", url)
             except:
                 print("Failed to activate URL: ", url)
-    time.sleep(10)
+    time.sleep(60)
