@@ -1,8 +1,8 @@
 import requests
 import time
 from pymongo import MongoClient
-DB = MongoClient("mongodb+srv://Lucas267:karangasem@cluster0.6cur0.mongodb.net/?retryWrites=true&w=majority")
-dbname = DB["Asta-Robot"]
+DB = MongoClient("URL MONGODB")
+dbname = DB["MONITORING"]
 db = dbname.Monitor
 
 # Fungsi untuk memeriksa status code dari response
